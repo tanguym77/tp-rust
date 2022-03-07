@@ -1,3 +1,4 @@
+#[test]
 fn main() {
     let a = 12;
     let b = 24;
@@ -31,5 +32,3 @@ fn fermat(a: i32) {
         }
     }
 }
-
-// Palindrome
