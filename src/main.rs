@@ -2,12 +2,22 @@
 mod arith;
 
 fn main() {
+    // Programme Euclide
     let a = 12;
     let b = 24;
     euclide(a,b);
 
+    // Programme Fermat
     let a=13;
     fermat(a);
+
+    // Programme Palindrome
+    let mot: &str = "TAT";
+    palindrome(mot);
+
+    // Programme Conversion
+    let nb = 25;
+    Conversion(nb)
 }
 
 fn euclide(a: u32, b: u32) {
@@ -33,4 +43,19 @@ fn fermat(a: i32) {
             break
         }
     }
+}
+
+fn palindrome(mot:&str) {
+    let inverse = mot.chars().rev().collect::<String>();
+    if mot == inverse {
+        println!("{} est un palindrome", mot);
+    } else {
+        println!("{} n'est pas un palindrome", mot);
+    }
+}
+
+fn Conversion(nb:i32) {
+    let fahr;
+    fahr = nb * 9/5 + 32;
+    println!("{} Degré correspond à {} Fahrenheit", nb, fahr);
 }
