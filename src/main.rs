@@ -2,8 +2,8 @@
 
 fn main() {
     // Programme Euclide
-    let a = 12;
-    let b = 24;
+    let a = 24;
+    let b = 36;
     euclide(a,b);
 
     // Programme Fermat
@@ -23,10 +23,12 @@ fn euclide(a: u32, b: u32) {
     let mut a = a;
     let mut b = b;
 
-    while b!=0 {
-        let t = b;
-        b = a%b;
-        a = t;
+    while a!=b {
+        if a > b {
+            a = a - b;
+        }else {
+            b = b -a;
+        }
     }
     println!("Le PGCD est {}", a)
 }
