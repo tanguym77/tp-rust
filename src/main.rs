@@ -1,5 +1,4 @@
 #![allow(non_snake_case)]
-mod arith;
 
 fn main() {
     // Programme Euclide
@@ -45,7 +44,7 @@ fn fermat(a: i32) {
     }
 }
 
-fn palindrome(mot:&str) {
+fn palindrome(mot: &str) {
     let inverse = mot.chars().rev().collect::<String>();
     if mot == inverse {
         println!("{} est un palindrome", mot);
