@@ -1,6 +1,6 @@
 #![allow(non_snake_case)]
 
-fn main() {
+fn algo() {
     // Programme Euclide
     let a = 24;
     let b = 36;
@@ -19,8 +19,8 @@ fn main() {
     Conversion(nb);
 
     // Programme Fibonacci
-    let n = 10;
-    println!("{}", fib(n));
+    let n = 12;
+    fib(n);
 }
 
 fn euclide(a: u32, b: u32) {
@@ -65,10 +65,11 @@ fn Conversion(nb:i32) {
     println!("{} Degré correspond à {} Fahrenheit", nb, fahr);
 }
 
-fn fib(n: u32) -> u32 {
-    match n {
-        0 => 1,
-        1 => 1,
-        _ => fib(n - 1) + fib(n - 2),
+fn fib(n:i32) {
+    (a,b) = (0,1);
+    for i in n {
+        (a,b) = (b, a + b)
     }
+    println!("{}",a);
 }
+
