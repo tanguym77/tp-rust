@@ -1,12 +1,12 @@
 #![allow(non_snake_case)]
 
-fn main() {
+pub fn fibo() {
     // Programme Fibonacci
     let n = 10;
     println!("{}", fib(n));
 }
 
-fn fib(n: u32) -> u32 {
+pub fn fib(n: u32) -> u32 {
     match n {
         0 => 1,
         1 => 1,

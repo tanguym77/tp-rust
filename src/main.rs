@@ -1,5 +1,6 @@
 #![allow(non_snake_case)]
 
+// Importation des fonctions
 mod Euclide;
 mod Ferma;
 mod Palindrome;
@@ -24,6 +25,14 @@ async fn manual_hello() -> impl Responder {
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
+
+    // Utilisation des fonctions
+    Palindrome::palin();
+    Euclide::euclide();
+    Ferma::fermat();
+    Conversion::conversion();
+    Fibonacci::fibo();
+
     HttpServer::new(|| {
         App::new()
             .service(hello)

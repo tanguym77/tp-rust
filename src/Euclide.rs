@@ -1,13 +1,9 @@
 #![allow(non_snake_case)]
 
-fn main() {
-    // Programme Euclide
+pub fn euclide() {
     let a = 24;
     let b = 36;
-    euclide(a,b);
-}
 
-fn euclide(a: u32, b: u32) {
     let mut a = a;
     let mut b = b;
 
