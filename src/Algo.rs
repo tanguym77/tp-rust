@@ -17,6 +17,10 @@ fn main() {
     // Programme Conversion
     let nb = 25;
     Conversion(nb);
+
+    // Programme Fibonacci
+    let n = 10;
+    println!("{}", fib(n));
 }
 
 fn euclide(a: u32, b: u32) {
@@ -59,4 +63,12 @@ fn Conversion(nb:i32) {
     let fahr;
     fahr = nb * 9/5 + 32;
     println!("{} Degré correspond à {} Fahrenheit", nb, fahr);
+}
+
+fn fib(n: u32) -> u32 {
+    match n {
+        0 => 1,
+        1 => 1,
+        _ => fib(n - 1) + fib(n - 2),
+    }
 }
