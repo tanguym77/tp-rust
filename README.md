@@ -1,6 +1,6 @@
 # tp-rust
 
-Actuellement, ce repository possède les programmes rust suivant :
+Actuellement, ce repository possède les programmes rust suivants :
 - Euclide
 - Fermat
 - Palindrome
