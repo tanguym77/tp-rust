@@ -5,3 +5,6 @@ Actuellement, ce repository possède les programmes rust suivant :
 - Fermat
 - Palindrome
 - Conversion Degré vers Fahrenheit
+- Fibonacci
+
+actix-web
