@@ -1,8 +1,6 @@
 #![allow(non_snake_case)]
 
-pub fn euclide() {
-    let a = 24;
-    let b = 36;
+pub fn euclide(a:i32 , b:i32){
 
     let mut a = a;
     let mut b = b;

@@ -1,7 +1,6 @@
 #![allow(non_snake_case)]
 
-pub fn palin() {
-    let mot: &str = "TAT";
+pub fn palin(mot: &str) {
     let inverse = mot.chars().rev().collect::<String>();
     if mot == inverse {
         println!("{} est un palindrome", mot);

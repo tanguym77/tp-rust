@@ -1,8 +1,6 @@
 #![allow(non_snake_case)]
 
-pub fn fibo() {
-    // Programme Fibonacci
-    let n = 10;
+pub fn fibo(n:u32) {
     println!("{}", fib(n));
 }
 

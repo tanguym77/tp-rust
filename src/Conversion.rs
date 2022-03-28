@@ -1,7 +1,6 @@
 #![allow(non_snake_case)]
 
-pub fn conversion() {
-    let nb = 25;
+pub fn conversion(nb:i32) {
 
     let fahr;
     fahr = nb * 9/5 + 32;
